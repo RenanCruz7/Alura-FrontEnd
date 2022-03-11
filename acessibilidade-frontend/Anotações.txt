@@ -1,0 +1,2 @@
+Melhor do que ter um texto alternativo para uma imagem besta para uma imagem
+melhor colocar um "alt" vazio

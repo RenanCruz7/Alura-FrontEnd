@@ -7,8 +7,8 @@ console.log(CPFrere)
 console.log(CPF)
 */
 
-const frase ='mimije deu o rabo'
+const frase ='mimije é lindo'
 
-const fraseCerta = frase.replace('rabo','****')
+const fraseCerta = frase.replace('lindo','*****')
 
 console.log(fraseCerta)

@@ -1,24 +1,6 @@
-/**---------------------------------------------------------------------------------------- */
-class Cliente{
-    nome
-    cpf
-}
-class ContaCorrente{
-    agencia
-    saldo
+import {Cliente} from "./cliente.js"
+import {ContaCorrente} from "./ContaCorrente.js"
 
-    sacar(valor){
-        this.saldo -=valor
-        return valor;
-    }
-
-    depositar(valor){
-        if(valor >0){
-            this.saldo+=valor
-        }
-    }
-}
-/**---------------------------------------------------------------------------------------- */
 const cliente1 = new Cliente()
 const contaCorrenteRenan = new ContaCorrente()
 
@@ -32,9 +14,12 @@ const contaCorrenteMatheus = new ContaCorrente()
 
 cliente2.nome = "Matheus"
 cliente2.cpf = 77788866688
-
 contaCorrenteMatheus.agencia = 10
 contaCorrenteMatheus.saldo = 1000
+
+const valorSacado =contaCorrenteRenan.sacar(1000)
+console.log(valorSacado)
+console.log(contaCorrenteRenan)
 
 /**
 console.log(cliente1)
@@ -51,7 +36,5 @@ console.log('sua conta ficou com o seguinte saldo após o saque: ',contaCorrente
 contaCorrenteMatheus.depositar(-500)
 console.log(contaCorrenteMatheus)
 */
-const valorSacado =contaCorrenteRenan.sacar(500)
-console.log(valorSacado)
 
 

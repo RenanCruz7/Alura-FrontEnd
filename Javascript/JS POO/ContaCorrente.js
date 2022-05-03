@@ -15,7 +15,7 @@ export class ContaCorrente{
     get saldo(){
         return this._saldo
     }
-
+    // set é usado para definir um valor para alguma propriedade
     set cliente(novoValor){
         if(novoValor  instanceof Cliente){
             this._cliente = novoValor

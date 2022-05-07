@@ -27,4 +27,3 @@ console.log(conta2)
 contaCorrenteRenan.transferir(200, conta2)
 console.log(conta2)
 
-

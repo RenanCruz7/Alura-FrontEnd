@@ -1,7 +1,4 @@
 export class Cliente{
-    nome
-    _cpf
-
     /** Get = pegar portanto nao vou poder alterar o valor do CPF quando ele for passado 
      pela primeira vez
     */

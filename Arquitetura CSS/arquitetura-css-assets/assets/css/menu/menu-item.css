@@ -1,7 +1,7 @@
-.menu-item{
+.menu__item{
   list-style: none;
 }
 /*last-child = pega o ultimo li*/
-.menu-item:last-child .menu-link {
+.menu__item:last-child .menu-link {
   margin-right:0;
 }

@@ -5,3 +5,6 @@ Neste repositorio irei armazenar todos os projetos e anotações sobre desenvolv
 - links sobre Atomic Design
   https://bradfrost.com/blog/post/atomic-web-design/
   https://medium.com/@romariocoimbrac/arquitetura-css-com-bem-e-atomic-design-428f59dacbae
+
+- Link sobre a Metodologia BEM
+  https://www.maujor.com/tutorial/metodologia-bem-para-criar-codigo-legivel.php

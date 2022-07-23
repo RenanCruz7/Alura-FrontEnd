@@ -33,9 +33,14 @@ for(let cont = 0; cont < listaDeTeclas.length; cont++){
     tecla.onclick = function(){ //função anonima
         tocaSom(idAudio)
     }
-    tecla.onkeydown = function(){ //tecla pressionada coloca a class ativa ao elemento
+
+    tecla.onkeydown = function(evento){ //tecla pressionada coloca a class ativa ao elemento
+        console.log(evento.code)
+        if (evento.code == 'Space' ||  evento.code == "Enter"){
         tecla.classList.add('ativa')
+        }
     }
+
     tecla.onkeyup = function(){ // inverso de onkeydown
         tecla.classList.remove('ativa')
     }

@@ -8,3 +8,8 @@ Neste repositorio irei armazenar todos os projetos e anotações sobre desenvolv
 
 - Link sobre a Metodologia BEM
   https://www.maujor.com/tutorial/metodologia-bem-para-criar-codigo-legivel.php
+
+
+
+- MVC 
+

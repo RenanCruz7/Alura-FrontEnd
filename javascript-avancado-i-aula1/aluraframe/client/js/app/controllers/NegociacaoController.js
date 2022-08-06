@@ -4,6 +4,7 @@ class NegociacaoController{
         this._inputData = document.querySelector('#data')
         this._inputQuantidade = document.querySelector('#quantidade')
         this._inputValor = document.querySelector('#valor')
+        this._listaNegociacoes = new ListaNegociacoes()
     }
 
     adiciona(event){
@@ -14,8 +15,7 @@ class NegociacaoController{
             this._inputQuantidade.value,
             this._inputValor.value
         )
-        console.log(negociacao)
-
-        console.log(DateHelper.dataParaTexto(negociacao.data))
+        this._listaNegociacoes.adiciona(negociacao)
+        console.log(this._listaNegociacoes.ImprimeNegociacoes)
     }
 }

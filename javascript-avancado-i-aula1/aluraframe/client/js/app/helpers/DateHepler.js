@@ -8,7 +8,9 @@ class DateHelper{
     static textoParaData(texto){
 
         //expressao regular que verificar se o ao usar o metodo o formato da data está correto
-        if(!/\d{4} - \d{2}-\d{2}/.test(texto)) throw new Error('Deve estar no seguinte formato yyyy-mm-dd')
+        if(!/\d{4}-\d{2}-\d{2}/.test(texto))
+            throw new Error('Deve estar no formato aaaa-mm-dd')
+
         return new Date(...texto.split('-').map((item,indice)=> item - indice % 2))
     }
 

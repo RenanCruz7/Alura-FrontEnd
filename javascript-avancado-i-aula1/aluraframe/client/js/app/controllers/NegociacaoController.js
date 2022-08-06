@@ -9,16 +9,13 @@ class NegociacaoController{
     adiciona(event){
         event.preventDefault() //previne o comportamento padrao da pagina ao atualizar quando o envio do form é feito
 
-        let helper = new DateHelper()
-        let data = helper.textoParaData(this._inputData.value)
-        
         let negociacao = new Negociacao(
-            data,
+            DateHelper.textoParaData(this._inputData.value),
             this._inputQuantidade.value,
             this._inputValor.value
         )
         console.log(negociacao)
 
-        console.log(helper.dataParaTexto(negociacao.data))
+        console.log(DateHelper.dataParaTexto(negociacao.data))
     }
 }

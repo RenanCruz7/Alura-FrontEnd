@@ -9,6 +9,6 @@ class ListaNegociacoes{
     }
 
     get ImprimeNegociacoes(){
-        return this._negociacoes
+        return [].concat(this._negociacoes)
     }
 }

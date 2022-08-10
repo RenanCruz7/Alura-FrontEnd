@@ -19,3 +19,8 @@ V - View - tudo que será exibido para o usuario
 
 C - Controller - onde é realizada as regras de negocio
 
+
+* Lembretes
+
+- Ao invocar um metodo sempre utilizar os () 
+

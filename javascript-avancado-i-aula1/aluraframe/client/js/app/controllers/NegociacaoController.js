@@ -10,12 +10,22 @@ class NegociacaoController{
     adiciona(event){
         event.preventDefault() //previne o comportamento padrao da pagina ao atualizar quando o envio do form é feito
 
-        let negociacao = new Negociacao(
+        this._listaNegociacoes.adiciona(this._criaNegociacao())
+        this._limpaFormulario()
+    }
+
+    _criaNegociacao(){
+        return new Negociacao(
             DateHelper.textoParaData(this._inputData.value),
             this._inputQuantidade.value,
-            this._inputValor.value
-        )
-        this._listaNegociacoes.adiciona(negociacao)
-        console.log(this._listaNegociacoes.ImprimeNegociacoes)
+            this._inputValor.value)
+    }
+
+    _limpaFormulario(){
+        this._inputData.value = ''
+        this._inputQuantidade.value = 1
+        this._inputValor.value = 0.0
+
+        this._inputData.focus()
     }
 }

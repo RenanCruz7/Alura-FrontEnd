@@ -7,13 +7,14 @@ class NegociacaoController{
         this._listaNegociacoes = new ListaNegociacoes()
         this._negociacoesView = new NegociacoesView(document.querySelector('#negociacoesView'))
 
-        this._negociacoesView.update()
+        this._negociacoesView.update(this._listaNegociacoes)
     }
 
     adiciona(event){
         event.preventDefault() //previne o comportamento padrao da pagina ao atualizar quando o envio do form é feito
 
         this._listaNegociacoes.adiciona(this._criaNegociacao())
+        this._negociacoesView.update(this._listaNegociacoes)
         this._limpaFormulario()
     }
 

@@ -1,7 +1,7 @@
 import { Negociacao } from "../models/negociacao.js"
 
 export class NegociacaoController{
-
+    // HTMLInputElement - é o tipo das nossas propriedades
     private inputData: HTMLInputElement
     private inputQuantidade: HTMLInputElement
     private inputValor: HTMLInputElement
@@ -34,7 +34,7 @@ export class NegociacaoController{
         const valor = parseFloat(this.inputValor.value)
         return new Negociacao(date,quantidade,valor)
     }
-    /*
+    /** 
     Limpa o formulario após o envio das informaçoes e coloca o foco no input de data
     para que o usuario possa continuar cadastrando novas negociacoes
     */

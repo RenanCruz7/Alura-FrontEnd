@@ -10,6 +10,7 @@ export class Negociacoes {
     adiciona(negociacao) {
         this.negociacoes.push(negociacao);
     }
+    //lista todos as negociacoes cadastradas - Readonly nao permite editar a lista com as negociacoes somente visualizar elas
     lista() {
         return this.negociacoes;
     }

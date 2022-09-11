@@ -7,6 +7,7 @@ export class Negociacoes{
     */
     private negociacoes: Array<Negociacao> = []
 
+    // adiciona um novo valor para o array
     adiciona(negociacao:Negociacao){
         this.negociacoes.push(negociacao)
     }

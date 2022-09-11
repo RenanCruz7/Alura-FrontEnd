@@ -6,6 +6,7 @@ export class Negociacoes {
         */
         this.negociacoes = [];
     }
+    // adiciona um novo valor para o array
     adiciona(negociacao) {
         this.negociacoes.push(negociacao);
     }

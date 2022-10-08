@@ -1,9 +1,5 @@
-export class NegociacoesView {
-    // guarda um elemento do DOM dentro de seletor
-    constructor(seletor) {
-        // colocar o valor de seletor dentro de elemento para usar ele na classe e identificarmos onde vamos colocar o nosso elemento HTML
-        this.elemento = document.querySelector(seletor);
-    }
+import { View } from "./view.js";
+export class NegociacoesView extends View {
     template(model) {
         return `
         <table class="table table-hover table-bordered">
@@ -27,8 +23,5 @@ export class NegociacoesView {
             </tbody>
         </table>
         `;
-    }
-    update(model) {
-        this.elemento.innerHTML = this.template(model);
     }
 }

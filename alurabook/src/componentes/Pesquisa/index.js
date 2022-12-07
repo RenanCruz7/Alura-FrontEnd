@@ -8,7 +8,7 @@ const PesquisaContainer = styled.section`
     color: #FFF;
     text-align: center;
     padding: 85px 0;
-    height: 270px;
+    height: 295px;
     width: 100%;
 `
 const Titulo = styled.h2`
@@ -25,8 +25,8 @@ const Subtitulo = styled.h3`
 `
 const Resultado = styled.div`
     display: flex;
-    justify-content;
-    align-items;
+    justify-content:center;
+    align-items; center;
     margin-bottom: 20px;
     cursor: pointer;
 

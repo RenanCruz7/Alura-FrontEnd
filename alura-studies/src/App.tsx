@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App">
         <Formulario></Formulario>
-        <Lista></Lista>    
+        <Lista></Lista>
+        Renan teste
     </div>
   );
 }

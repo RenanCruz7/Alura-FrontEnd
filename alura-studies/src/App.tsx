@@ -7,9 +7,8 @@ function App() {
     <div className="App">
         <Formulario></Formulario>
         <Lista></Lista>
-        Renan teste
     </div>
-  );
+  )
 }
 
 export default App;

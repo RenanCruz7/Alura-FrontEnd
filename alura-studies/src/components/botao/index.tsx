@@ -1,11 +1,15 @@
 import React from 'react'
+import style from './Botao.module.scss'
 
-class Botao extends React.Component{
+interface IProps {
+    children: React.ReactNode;
+  }
+
+class Botao extends React.Component<IProps>{
     render(): React.ReactNode {
         return(
-            <button>Enviar</button>
+            <button className={style.botao}>{this.props.children}</button>
         )
     }
 }
-
 export default Botao;

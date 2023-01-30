@@ -41,6 +41,11 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "sass": "^1.57.1"
+=======
+    "sass": "^1.57.1",
+    "typescript-plugin-css-modules": "^4.1.1"
+>>>>>>> 6722a79a264a49bc451cdb2e2b60398f222113bc
   }
 }

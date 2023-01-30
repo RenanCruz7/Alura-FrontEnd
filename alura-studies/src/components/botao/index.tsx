@@ -1,16 +1,15 @@
 import React from 'react'
 import style from './Botao.module.scss'
 
-class Botao extends React.Component<{texto: string}>{
+interface IProps {
+    children: React.ReactNode;
+  }
+
+class Botao extends React.Component<IProps>{
     render(): React.ReactNode {
         return(
-            <button className={style.botao} onClick={handleClick}>{this.props.texto}</button>
+            <button className={style.botao}>{this.props.children}</button>
         )
     }
 }
-
-function handleClick(){
-    alert('Teste de Função')
-}
-
 export default Botao;

@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/restaurante" element={<VitrineRestaurantes />} />
+      <Route path="/restaurantes" element={<VitrineRestaurantes />} />
     </Routes>
   );
 }

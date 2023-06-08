@@ -1,5 +1,3 @@
-import React from 'react';
-import Cabecalho from './componentes/cabecalho';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import Formulario from './componentes/Formulario';
@@ -13,7 +11,6 @@ function App() {
         </Routes>
       </RecoilRoot>
     </BrowserRouter>
-    
   );
 }
 

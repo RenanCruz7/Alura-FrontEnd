@@ -1,6 +1,8 @@
 import { useState, useRef } from "react"
 import { useAdicionarParticipante } from "../state/hook/userAdicionarParticipante"
 import { useMensagemDeErro } from "../state/hook/useMensagemDeErro"
+import Cabecalho from "./cabecalho"
+import Card from "./card"
 
 const Formulario = () =>{
 
@@ -20,17 +22,20 @@ const Formulario = () =>{
     }  
 
     return(
-        <form onSubmit={adicionarParticipante}>
-            <input
-                value={nome}
-                onChange={evento => setNome(evento.target.value)}    
-                type="text"
-                autoFocus 
-                placeholder="Insira os nomes dos participantes">
-             </input>
-            <button disabled={!nome}>Adicionar</button>
-            {mensagemDeErro&&<p role="alert">{mensagemDeErro}</p>}
-        </form>
+        <>
+        <Card></Card>
+            <form onSubmit={adicionarParticipante}>
+                <input
+                    value={nome}
+                    onChange={evento => setNome(evento.target.value)}    
+                    type="text"
+                    autoFocus 
+                    placeholder="Insira os nomes dos participantes">
+                </input>
+                <button disabled={!nome}>Adicionar</button>
+                {mensagemDeErro&&<p role="alert">{mensagemDeErro}</p>}
+            </form>
+        </>
     )
 }
 

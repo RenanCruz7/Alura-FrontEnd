@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Cabecalho from './componentes/cabecalho';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Cabecalho></Cabecalho>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

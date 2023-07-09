@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A pagina de configuracao deve ser renderizada corretamente 1`] = `
+<div>
+  <div
+    class="sc-kmCNLd iJXcSZ"
+  >
+    <section>
+      <h2>
+        Vamos Começar
+      </h2>
+      <form>
+        <div
+          class="sc-dPkXXU lafjmZ"
+        >
+          <input
+            placeholder="Insira os nomes dos participantes"
+            type="text"
+            value=""
+          />
+          <button
+            disabled=""
+          >
+            Adicionar
+          </button>
+        </div>
+        
+      </form>
+      <ul />
+      <footer
+        class="sc-eYtRab eeFtEy"
+      >
+        <button
+          class="sc-clmipK bRdYQ"
+          disabled=""
+        >
+          Iniciar Brincadeira
+        </button>
+        <img
+          alt="Sacolas de Compras"
+          src="https://raw.githubusercontent.com/alura-cursos/sorteador-de-amigo-secreto/aula-3/public/imagens/sacolas.png"
+        />
+      </footer>
+    </section>
+  </div>
+</div>
+`;

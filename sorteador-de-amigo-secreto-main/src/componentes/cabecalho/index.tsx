@@ -26,6 +26,7 @@ const Cabecalho = () =>{
     `
     const ImagemParticipante = styled.img`
         z-index: 1;
+        height: auto; /* Mantém a proporção original da imagem */
     `
 
     return(
